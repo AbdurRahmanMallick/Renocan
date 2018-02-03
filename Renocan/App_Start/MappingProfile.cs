@@ -12,8 +12,8 @@ namespace Renocan.App_Start
     {
         public MappingProfile()
         {
-            Mapper.CreateMap<Client_Signup, Client_SignupDto>();
-            Mapper.CreateMap<Client_SignupDto, Client_Signup>();
+            CreateMap<Client_Signup, Client_SignupDto>();
+            CreateMap<Client_SignupDto, Client_Signup>();
         }
     }
 }

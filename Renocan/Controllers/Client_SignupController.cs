@@ -21,15 +21,15 @@ namespace Renocan.Controllers
         }
 
         // [System.Web.Http.HttpPost]
-        public Client_SignupDto POST(Client_SignupDto clientSignUpDto)
+        public IHttpActionResult POST(Client_SignupDto clientSignUpDto)
         {
             if (!ModelState.IsValid)
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
+                return BadRequest();
 
             var clientSignUp = Mapper.Map<Client_SignupDto, Client_Signup>(clientSignUpDto);
             context.Client_Signup.Add(clientSignUp);
             context.SaveChanges();
-            return clientSignUpDto;
+            return Created(new Uri(Request.RequestUri + "/" + clientSignUp.Client_ID), clientSignUpDto);
         }
 
         public IEnumerable<Client_SignupDto> GET()
@@ -37,10 +37,21 @@ namespace Renocan.Controllers
             return context.Client_Signup.ToList().Select(Mapper.Map<Client_Signup, Client_SignupDto>);
         }
 
+        public IHttpActionResult GET(int id)
+        {
+            var clientSignUp = context.Client_Signup.SingleOrDefault(c => c.Client_ID == id);
 
+            if (clientSignUp == null)
+                // throw new HttpResponseException(HttpStatusCode.NotFound);
+                return NotFound();
+
+            return Ok(Mapper.Map<Client_Signup, Client_SignupDto>(clientSignUp));
+        }
+
+        [HttpPut]
         public void UpdateCustomer(int id,Client_SignupDto client_SignupDto)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
 
             var customerInDb = context.Client_Signup.SingleOrDefault(c => c.Client_ID == id);

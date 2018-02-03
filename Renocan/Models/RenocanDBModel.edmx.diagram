@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="4f7e419f3fdb44fc9294140000ca6ff4" Name="Diagram1">
+      <Diagram DiagramId="4458de2a4c4a46ab85ea761c86eef1b9" Name="Diagram1">
         <EntityTypeShape EntityType="Renocan_DbModel.Activity" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Renocan_DbModel.Admin_Signup" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Renocan_DbModel.Bookmark" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />

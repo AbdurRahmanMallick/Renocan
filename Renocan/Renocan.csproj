@@ -204,6 +204,7 @@
     <Compile Include="Controllers\Api\Company_Service_LocationController.cs" />
     <Compile Include="Controllers\Api\ImageTypeController.cs" />
     <Compile Include="Controllers\Api\Image_GalleryController.cs" />
+    <Compile Include="Controllers\Api\LocationController.cs" />
     <Compile Include="Controllers\Api\Registration_CompanyController.cs" />
     <Compile Include="Controllers\Client_SignupController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -214,6 +215,7 @@
     <Compile Include="Dtos\Client_SignupDto.cs" />
     <Compile Include="Dtos\Company_Service_LocationDto.cs" />
     <Compile Include="Dtos\Image_GalleryDto.cs" />
+    <Compile Include="Dtos\LocationDto.cs" />
     <Compile Include="Dtos\Registration_CompanyDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

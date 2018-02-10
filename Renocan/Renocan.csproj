@@ -197,6 +197,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\Api\abcController.cs" />
     <Compile Include="Controllers\Api\ActivityController.cs" />
     <Compile Include="Controllers\Api\Admin_SignupController.cs" />
     <Compile Include="Controllers\Api\BookmarkController.cs" />

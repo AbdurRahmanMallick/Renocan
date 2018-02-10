@@ -204,6 +204,7 @@
     <Compile Include="Controllers\Api\Company_Service_LocationController.cs" />
     <Compile Include="Controllers\Api\ImageTypeController.cs" />
     <Compile Include="Controllers\Api\Image_GalleryController.cs" />
+    <Compile Include="Controllers\Api\rafayController.cs" />
     <Compile Include="Controllers\Api\Registration_CompanyController.cs" />
     <Compile Include="Controllers\Client_SignupController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

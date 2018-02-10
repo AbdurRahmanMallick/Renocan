@@ -29,6 +29,14 @@ namespace Renocan.App_Start
 
             CreateMap<Image_Gallary, Image_GalleryDto>();
             CreateMap<Image_GalleryDto, Image_Gallary>().ForMember(m => m.Image_ID, opt => opt.Ignore());
+
+            CreateMap<Image_Type, Image_TypeDto>();
+            CreateMap<Image_TypeDto, Image_Type>().ForMember(m => m.Image_Type_ID, opt => opt.Ignore());
+
+            CreateMap<Scoreboard, ScoreboardDto>();
+            CreateMap<ScoreboardDto, Scoreboard>().ForMember(m => m.Scoreboard_ID, opt => opt.Ignore());
+            
+            
         }
     }
 }

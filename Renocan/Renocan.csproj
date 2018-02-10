@@ -200,7 +200,6 @@
     <Compile Include="Controllers\Api\ActivityController.cs" />
     <Compile Include="Controllers\Api\Admin_SignupController.cs" />
     <Compile Include="Controllers\Api\BookmarkController.cs" />
-    <Compile Include="Controllers\Api\Client_SignupController.cs" />
     <Compile Include="Controllers\Api\Company_Service_LocationController.cs" />
     <Compile Include="Controllers\Api\ImageTypeController.cs" />
     <Compile Include="Controllers\Api\Image_GalleryController.cs" />
